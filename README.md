@@ -18,5 +18,5 @@ Configure HAProxy
 Create new SSL Certificate and enable auto renewal
 
   1. nano /usr/local/bin/renew.sh
-  2  Add domain with space in "SITES"
+  2. Add domain with space in "SITES"
 
