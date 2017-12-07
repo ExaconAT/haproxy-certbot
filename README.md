@@ -11,6 +11,9 @@ Install
   3. chmod +x /usr/local/bin/renew.sh
   4. sudo crontab -e
      30 2 * * * /usr/local/bin/renew.sh >> /var/log/le-renewal.log
+     
+Configure HAProxy
+  1. Add the lines from haproxy.cfg without "..."
    
 Create new SSL Certificate and enable auto renewal
 
