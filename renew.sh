@@ -11,4 +11,4 @@ do
         cat fullchain.pem privkey.pem > /etc/haproxy/certs/$DOMAIN.pem
 done
 # reload haproxy
-service haproxy reload
+/etc/init.d/haproxy reload
