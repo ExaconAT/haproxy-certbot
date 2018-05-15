@@ -23,6 +23,8 @@ Create a new SSL Certificate and enable auto renewal
 Remove Domain from HAproxy
   1. remove Domain from HAProxy
   2. remove Domain from /usr/local/bin/renew.sh
-  3. run /usr/local/bin/renew.sh
-  
+  3. remove Domain from /etc/haproxy/certs/
+  4. run /usr/local/bin/renew.sh
+
+
 Working perfectly.
