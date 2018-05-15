@@ -2,7 +2,8 @@
 Auto create and renewal script
 
 
-This script will download new Let's Encrypt certificates, automatically renew them and put it in the right format for HAProxy + reload. Script will be executed every 2:30 hours.
+This script will create and automatically update Let's Encrypt certificates and put it in the right format for HAProxy. 
+Script will be executed every day @ 2:30 am and HAProxy does an reload.
 
 Install
 
@@ -15,8 +16,13 @@ Install
 Configure HAProxy
   1. Add the lines from haproxy.cfg without "..."
    
-Create new SSL Certificate and enable auto renewal
-
+Create a new SSL Certificate and enable auto renewal
   1. nano /usr/local/bin/renew.sh
-  2. Add domain with space in "SITES"
-
+  2. Add domains with space in "SITES" eg. (domain1.com domain2.com domain3.com)
+  
+Remove Domain from HAproxy
+  1. remove Domain from HAProxy
+  2. remove Domain from /usr/local/bin/renew.sh
+  3. run /usr/local/bin/renew.sh
+  
+Working perfectly.
